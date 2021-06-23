@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.revarmygaming.minecraftconsoleclient.controllers.LoginController">
+   <children>
+      <JFXTextField fx:id="host" layoutX="138.0" layoutY="101.0" promptText="Host" />
+      <JFXTextField fx:id="port" layoutX="138.0" layoutY="140.0" promptText="Port" />
+      <JFXTextField fx:id="username" layoutX="138.0" layoutY="267.0" promptText="Username" />
+      <Label layoutX="84.0" layoutY="38.0" text="Minecraft Console Client">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="premium" layoutX="133.0" layoutY="193.0" selected="true" text="Premium" />
+      <JFXButton fx:id="login" layoutX="158.0" layoutY="399.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="password" layoutX="138.0" layoutY="320.0" promptText="Password" />
+      <JFXButton fx:id="restore" layoutX="250.0" layoutY="463.0" text="Restore Previous Session" />
+   </children>
+</AnchorPane>

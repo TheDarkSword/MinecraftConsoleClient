@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.revarmygaming.minecraftconsoleclient.controllers.ChatController">
+   <children>
+      <TextField fx:id="input" layoutX="14.0" layoutY="346.0" prefHeight="33.0" prefWidth="570.0" />
+      <WebView fx:id="chat" layoutX="14.0" layoutY="14.0" prefHeight="319.0" prefWidth="570.0" />
+   </children>
+</AnchorPane>
