@@ -4,7 +4,7 @@ import java.util.TimerTask;
 
 public class MinecraftTaskRepeating extends TimerTask {
 
-    private Runnable runnable;
+    private final Runnable runnable;
     private boolean cancelled;
 
     public MinecraftTaskRepeating(Runnable runnable){

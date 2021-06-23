@@ -7,11 +7,11 @@ import javafx.scene.control.TextField;
 
 public class MinecraftThread implements Runnable {
 
-    private Minecraft minecraft;
-    private String host;
-    private int port;
-    private Logger logger;
-    private TextField input;
+    private final Minecraft minecraft;
+    private final String host;
+    private final int port;
+    private final Logger logger;
+    private final TextField input;
 
     public MinecraftThread(Minecraft minecraft, String host, int port, Logger logger, TextField input){
         this.minecraft = minecraft;

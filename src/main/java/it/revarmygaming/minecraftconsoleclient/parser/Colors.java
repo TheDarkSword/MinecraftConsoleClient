@@ -28,9 +28,9 @@ public enum Colors {
     ITALIC("italic", "o", Ansi.ansi().a(Ansi.Attribute.ITALIC).toString()),
     RESET("reset", "r", Ansi.ansi().a(Ansi.Attribute.RESET).toString());
 
-    private String name;
-    private String colorCode;
-    private String color;
+    private final String name;
+    private final String colorCode;
+    private final String color;
 
     Colors(String name, String colorCode, String color){
         this.name = name;

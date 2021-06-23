@@ -19,8 +19,8 @@ public enum ChatColor {
     YELLOW("yellow", "#FFFF00"),
     WHITE("white", "#FFFFFF");
 
-    private String name;
-    private String color;
+    private final String name;
+    private final String color;
 
     ChatColor(String name, String color){
         this.name = name;

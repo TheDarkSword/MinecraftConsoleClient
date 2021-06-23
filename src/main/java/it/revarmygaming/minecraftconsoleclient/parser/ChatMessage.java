@@ -6,7 +6,7 @@ import com.google.gson.JsonParser;
 
 public class ChatMessage {
 
-    private JsonObject message;
+    private final JsonObject message;
 
     public ChatMessage(JsonObject message){
         this.message = message;

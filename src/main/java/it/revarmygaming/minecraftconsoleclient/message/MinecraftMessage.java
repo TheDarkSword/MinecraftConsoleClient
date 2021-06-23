@@ -13,7 +13,7 @@ public class MinecraftMessage {
     }
 
     public static class Builder {
-        private StringBuilder builder;
+        private final StringBuilder builder;
         private String text;
         private String color;
 

@@ -22,7 +22,7 @@ public class ChatController {
     public static String host;
     public static int port;
 
-    private LinkedList<String> cacheMessage = new LinkedList<>();
+    private final LinkedList<String> cacheMessage = new LinkedList<>();
     private int cachePointer = 0;
 
     private int transactionId = 1;

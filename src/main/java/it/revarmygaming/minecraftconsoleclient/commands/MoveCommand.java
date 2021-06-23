@@ -1,6 +1,5 @@
 package it.revarmygaming.minecraftconsoleclient.commands;
 
-import com.github.steveice10.mc.protocol.packet.ingame.client.player.ClientPlayerPositionPacket;
 import it.revarmygaming.minecraftconsoleclient.Minecraft;
 import it.revarmygaming.minecraftconsoleclient.entity.Player;
 import it.revarmygaming.minecraftconsoleclient.message.MinecraftMessage;

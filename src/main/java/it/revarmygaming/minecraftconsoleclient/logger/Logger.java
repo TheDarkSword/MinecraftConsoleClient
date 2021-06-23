@@ -15,9 +15,9 @@ public class Logger {
     private final static Pattern invalidCodes = Pattern.compile("(&k)|(&l)|(&m)|(&n)|(&o)|(&r)");*/
     private static final String TEMPLATE = "<span style='color: $color; font-weight: $weight;'>$text</span>";
 
-    private WebView chat;
-    private StringBuilder content;
-    private String bottomFunction;
+    private final WebView chat;
+    private final StringBuilder content;
+    private final String bottomFunction;
 
     public Logger(WebView chat){
         this.chat = chat;
@@ -36,7 +36,7 @@ public class Logger {
                     .replace("$weight", "normal")
                     .replace("$text", message)).append("<br>");
         }
-        Platform.runLater(() -> chat.getEngine().loadContent(content.toString() + bottomFunction + "</body></html>", "text/html"));
+        Platform.runLater(() -> chat.getEngine().loadContent(content + bottomFunction + "</body></html>", "text/html"));
     }
 
     public void write(MinecraftMessage message){
